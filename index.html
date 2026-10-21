@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プレミア・シーズンケア</title>
+<meta name="description" content="年に4度、ご自宅の一か所を新築時以上へ。最上級スタッフによる年間専属ハウスクリーニング。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf8f4; --surface:#ffffff; --ink:#1d1b18; --muted:#6b655c;
+  --line:#e4ded3; --gold:#a8873f; --gold-soft:#f3ecdc; --dark:#1b1a17;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#141311; --surface:#1d1c19; --ink:#efebe3; --muted:#a59e92;
+    --line:#2f2c27; --gold:#cfae66; --gold-soft:#2a251b; --dark:#0d0c0b;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Noto Sans JP",system-ui,sans-serif;line-height:1.85;font-size:16px}
+h1,h2,h3{font-family:"Noto Serif JP",serif;font-weight:600;line-height:1.4;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:88px 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;margin-bottom:14px}
+h2{font-size:clamp(24px,3.4vw,34px);margin-bottom:20px}
+.lead{color:var(--muted);max-width:640px}
+
+/* hero */
+.hero{background:var(--dark);color:#f4efe5;padding:120px 0 104px;text-align:center;border:0}
+.hero .eyebrow{color:#cfae66}
+.hero h1{font-size:clamp(30px,5.4vw,54px);letter-spacing:.06em;margin:8px 0 22px}
+.hero p{color:#c9c1b3;max-width:560px;margin:0 auto 36px}
+.btn{display:inline-block;padding:14px 34px;border:1px solid #cfae66;color:#f4efe5;
+  text-decoration:none;letter-spacing:.12em;font-size:14px;transition:.2s}
+.btn:hover{background:#cfae66;color:#1b1a17}
+
+/* pillars */
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:40px}
+.pillar{background:var(--surface);border:1px solid var(--line);padding:30px 26px}
+.pillar .num{font-family:"Noto Serif JP",serif;color:var(--gold);font-size:28px}
+.pillar h3{font-size:18px;margin:6px 0 8px}
+.pillar p{margin:0;color:var(--muted);font-size:14.5px}
+
+/* menu */
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:40px}
+.item{background:var(--surface);border:1px solid var(--line);padding:26px}
+.item h3{font-size:18px;margin-bottom:12px;display:flex;align-items:baseline;gap:10px}
+.item h3 span{font-family:"Noto Sans JP";font-size:12px;color:var(--gold);letter-spacing:.15em}
+.day{display:grid;grid-template-columns:52px 1fr;gap:8px;font-size:14px;color:var(--muted);margin-top:6px}
+.day b{color:var(--ink);font-weight:500}
+
+/* season */
+.season{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:36px}
+.season div{background:var(--surface);padding:26px 18px;text-align:center}
+.season .s{font-family:"Noto Serif JP",serif;font-size:22px;color:var(--gold)}
+.season .t{font-size:14px;color:var(--muted)}
+@media (max-width:640px){.season{grid-template-columns:repeat(2,1fr)}}
+
+/* benefits */
+.benefits{list-style:none;padding:0;margin:36px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 40px}
+.benefits li{padding:16px 0 16px 30px;border-bottom:1px solid var(--line);position:relative}
+.benefits li::before{content:"";position:absolute;left:4px;top:27px;width:10px;height:1px;background:var(--gold)}
+
+/* plans */
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:40px}
+.plan{background:var(--surface);border:1px solid var(--line);padding:36px 28px;text-align:center}
+.plan.featured{border-color:var(--gold);background:var(--gold-soft)}
+.plan .name{font-family:"Noto Serif JP",serif;font-size:20px}
+.plan .price{font-family:"Noto Serif JP",serif;font-size:36px;margin:14px 0 2px}
+.plan .price small{font-size:15px}
+.plan .tax{font-size:12.5px;color:var(--muted)}
+.plan ul{list-style:none;padding:0;margin:22px 0 0;font-size:14.5px;text-align:left}
+.plan li{padding:8px 0;border-top:1px solid var(--line)}
+
+/* contact */
+.contact{text-align:center}
+.contact .btn{color:var(--ink);border-color:var(--gold)}
+.contact .btn:hover{color:#1b1a17}
+footer{padding:36px 0;text-align:center;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Premium Season Care</div>
+    <h1>プレミア・シーズンケア</h1>
+    <p>年に4度、ご自宅の一か所を“新築時以上”へ。<br>最上級スタッフだけが担当する、年間専属のハウスクリーニングです。</p>
+    <a class="btn" href="#plans">プランを見る</a>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Concept</div>
+    <h2>広く浅くではなく、ひとつを完璧に。</h2>
+    <p class="lead">1回の訪問で2日間をかけ、お選びいただいた一か所だけに集中します。分解・洗浄・研磨・保護までを一貫して行い、素材本来の美しさを取り戻します。</p>
+    <div class="pillars">
+      <div class="pillar"><div class="num">01</div><h3>最上級スタッフ限定</h3><p>当社で最高位の技術認定を受けたスタッフのみが担当します。</p></div>
+      <div class="pillar"><div class="num">02</div><h3>専属チーム制</h3><p>毎回同じチームが伺うため、ご自宅の細部まで把握しています。</p></div>
+      <div class="pillar"><div class="num">03</div><h3>1回2日間の集中施工</h3><p>一か所に2日間。通常のクリーニングでは届かない領域まで。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="eyebrow">Menu</div>
+    <h2>お選びいただける2日間集中メニュー</h2>
+    <p class="lead">以下から年4つ（プレミア・プラスは年8つ）をお選びください。同じメニューを複数回お選びいただくことも可能です。</p>
+    <div class="menu">
+      <div class="item"><h3>キッチン<span>KITCHEN</span></h3>
+        <div class="day"><b>1日目</b>レンジフード・換気扇・コンロの分解洗浄、オーブン・食洗機内部</div>
+        <div class="day"><b>2日目</b>全収納の取り出し清掃、天板研磨、輸入水栓のメンテナンス</div></div>
+      <div class="item"><h3>バスルーム・洗面<span>BATH</span></h3>
+        <div class="day"><b>1日目</b>浴槽エプロン内部、天井・換気扇、水垢除去</div>
+        <div class="day"><b>2日目</b>鏡のウロコ取り、大理石・天然石の研磨、撥水コーティング</div></div>
+      <div class="item"><h3>窓・サッシ・網戸<span>WINDOW</span></h3>
+        <div class="day"><b>1日目</b>全窓の内外、サッシレール、網戸</div>
+        <div class="day"><b>2日目</b>高所・吹き抜けガラス、ガラスコーティング</div></div>
+      <div class="item"><h3>カーペット・ラグ<span>CARPET</span></h3>
+        <div class="day"><b>1日目</b>シャンプー・リンス洗浄、シミ抜き</div>
+        <div class="day"><b>2日目</b>乾燥、毛並みの整え、防汚加工</div></div>
+      <div class="item"><h3>床<span>FLOOR</span></h3>
+        <div class="day"><b>1日目</b>既存ワックスの剥離・洗浄</div>
+        <div class="day"><b>2日目</b>無垢材・大理石・タイルに合わせたワックス／コーティング</div></div>
+      <div class="item"><h3>ソファ・ファブリック<span>FABRIC</span></h3>
+        <div class="day"><b>1日目</b>布・革の洗浄、シミ抜き</div>
+        <div class="day"><b>2日目</b>革の保湿、防汚処理、カーテンクリーニング</div></div>
+      <div class="item"><h3>エアコン・空調<span>AIR</span></h3>
+        <div class="day"><b>1日目</b>全台の分解洗浄</div>
+        <div class="day"><b>2日目</b>全熱交換器・24時間換気・各種フィルター</div></div>
+      <div class="item"><h3>クローゼット・収納<span>CLOSET</span></h3>
+        <div class="day"><b>1日目</b>全取り出し、防カビ処理</div>
+        <div class="day"><b>2日目</b>防虫対策と再整頓、収納のご提案</div></div>
+      <div class="item"><h3>外まわり<span>EXTERIOR</span></h3>
+        <div class="day"><b>1日目</b>テラス・バルコニーの高圧洗浄</div>
+        <div class="day"><b>2日目</b>外壁（手の届く範囲）、門まわり、ガレージ</div></div>
+      <div class="item"><h3>照明・高所<span>LIGHTING</span></h3>
+        <div class="day"><b>1日目</b>シャンデリアのクリスタルを一つずつ洗浄</div>
+        <div class="day"><b>2日目</b>吹き抜け・梁上、間接照明</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Seasonal Plan</div>
+    <h2>季節に合わせたおすすめの組み合わせ</h2>
+    <div class="season">
+      <div><div class="s">春</div><div class="t">窓・サッシ</div></div>
+      <div><div class="s">初夏</div><div class="t">エアコン・空調</div></div>
+      <div><div class="s">夏</div><div class="t">カーペット・ラグ</div></div>
+      <div><div class="s">年末</div><div class="t">キッチン</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Privileges</div>
+    <h2>年間契約のお客様だけの特典</h2>
+    <ul class="benefits">
+      <li>専属チーム固定制（毎回同じ顔ぶれで伺います）</li>
+      <li>年1回の全館点検と「年間ケア計画書」のご提出</li>
+      <li>施工ごとの写真付きビフォー・アフターレポート</li>
+      <li>来客前などの緊急対応を優先受付（年1回無料）</li>
+      <li>素材ごとのお手入れ記録「ご自宅カルテ」の作成</li>
+      <li>美術品・高級家具にも対応した高額賠償保険</li>
+      <li>秘密保持契約（NDA）の締結</li>
+      <li>季節に合わせた施工スケジュールのご提案</li>
+    </ul>
+  </div>
+</section>
+
+<section id="plans">
+  <div class="wrap">
+    <div class="eyebrow">Plans</div>
+    <h2>料金プラン</h2>
+    <div class="plans">
+      <div class="plan featured">
+        <div class="name">プレミア</div>
+        <div class="price">1,100,000<small>円</small></div>
+        <div class="tax">年額・税込（税抜 1,000,000円）</div>
+        <ul><li>年4回（集中メニューから4つ）</li><li>1回あたり2日間</li><li>全特典付き</li></ul>
+      </div>
+      <div class="plan">
+        <div class="name">プレミア・プラス</div>
+        <div class="price">2,200,000<small>円</small></div>
+        <div class="tax">年額・税込（税抜 2,000,000円）</div>
+        <ul><li>年8回（集中メニューから8つ）</li><li>別荘1件への出張対応</li><li>全特典付き</li></ul>
+      </div>
+      <div class="plan">
+        <div class="name">プライベート</div>
+        <div class="price" style="font-size:26px;margin:22px 0 10px">個別お見積り</div>
+        <div class="tax">複数邸宅・別荘・月1回訪問など</div>
+        <ul><li>訪問頻度・範囲を自由設計</li><li>管理会社様との連携</li><li>全特典付き</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h2>まずは無料のご自宅診断から</h2>
+    <p class="lead" style="margin:0 auto 32px">担当スタッフがご自宅に伺い、素材や状態を拝見したうえで、最適な年間ケア計画をご提案します。</p>
+    <a class="btn" href="#">お問い合わせ（準備中）</a>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Premium Season Care</footer>
+</body>
+</html>
